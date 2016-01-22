@@ -1,0 +1,54 @@
+html{
+  font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-size: var(--rootFont);
+  height: 100%;
+}
+
+body{
+  font-family: var(--fontOne), sans-serif;
+  font-size: var(--fontSize);
+  background: var(--white);
+	margin: 0;
+  min-height: 100%;
+  /*lost-utility: edit;*/
+}
+
+.container {
+  overflow:auto;
+  padding-bottom: 160px;
+}
+
+div, a, span {
+    line-height:1.5; /* font-size:1(12px) + line-space:0.33(4px) = 16px */
+    letter-spacing:0.03em;
+}
+
+h1, h2, h3, h4, h5, h6 {color: var(--text-color);}
+
+a{ text-decoration: none; color: inherit; }
+
+figure {display: flex;}
+
+section {
+	width: 100%;
+  lost-utility: clearfix;
+}
+
+.page-center {
+  lost-center: 896px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.quarter {
+  lost-column: 1/4;
+}
+
+.third {
+  lost-column: 1/3;
+}
+
+.half {
+  lost-column: 1/2;
+}
